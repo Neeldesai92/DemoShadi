@@ -77,11 +77,11 @@ public class MatchesListAdapter extends RecyclerView.Adapter<MatchesListAdapter.
         if (result.getRequestFlg().equalsIgnoreCase("accepted")) {
             holder.mLlMsg.setVisibility(View.VISIBLE);
             holder.mLlAcation.setVisibility(View.GONE);
-            holder.mTvMsg.setText("Your Profile is Accepted");
-        } else if (result.getRequestFlg().equalsIgnoreCase("Rejected")) {
+            holder.mTvMsg.setText("Member accepted");
+        } else if (result.getRequestFlg().equalsIgnoreCase("declined")) {
             holder.mLlMsg.setVisibility(View.VISIBLE);
             holder.mLlAcation.setVisibility(View.GONE);
-            holder.mTvMsg.setText("Your Profile is Rejected");
+            holder.mTvMsg.setText("Member declined");
         } else {
             holder.mLlAcation.setVisibility(View.VISIBLE);
             holder.mLlMsg.setVisibility(View.GONE);
@@ -100,7 +100,7 @@ public class MatchesListAdapter extends RecyclerView.Adapter<MatchesListAdapter.
         holder.mIvReject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.setRequestFlg("Rejected");
+                result.setRequestFlg("declined");
                 DatabaseClient.getInstance(mActivity).getAppDatabase()
                         .taskDao()
                         .update(result);

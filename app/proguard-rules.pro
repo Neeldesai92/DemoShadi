@@ -138,8 +138,8 @@ public void *ButtonClicked(android.view.View);
 
 
 ## LIVE
--keep class in.webxpress.sd.bikerbuddy.model.** { *; }
--keep class in.webxpress.sd.bikerbuddy.util.Security.**
+-keep class in.neel.desai.Demo.model.** { *; }
+-keep class in.neel.desai.Demo.util.Security.**
 
 
 -keep class * implements android.os.Parcelable {
