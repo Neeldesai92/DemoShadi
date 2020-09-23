@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.neel.desai.Demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+
+    <application
+        android:name="in.neel.desai.Demo.application.Application"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="icon,theme,label,name,android:allowBackup">
+
+        <activity
+            android:name="in.neel.desai.Demo.Activity.SplashActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.neel.desai.Demo.Activity.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="userPortrait"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${packageName}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_corner_round_drawable">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDocketList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dimen_ten"
+            android:paddingBottom="@dimen/dimen_ten" />
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_alert_message"
+            style="@style/customTextNormal"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_ten"
+            android:text="@string/msg_no_data_found"
+            android:textColor="@color/colorHint" />
+    </RelativeLayout>
+</FrameLayout>

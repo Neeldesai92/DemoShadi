@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="msg_no_data_found">No data found</string>
+    <!--Connections error message-->
+    <string name="title_connection_alert">Connection Error</string>
+    <string name="msg_try_with_active_network">Please connect with active network connection and Try again.</string>
+    <string name="action_ok">OK</string>
+
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Root Checker-->
+    <string name="app_unknown">SUPERUSER APP : Unknown</string>
+    <string name="verifying">Verifying root..</string>
+    <string name="wait">Checking, please wait..</string>
+    <string name="check_complete">Checking complete</string>
+    <string name="not_rooted">NOT ROOTED</string>
+    <string name="rooted">DEVICE IS ROOTED</string>
+
+    <string name="permission_denied">ROOT PERMISSION NOT GRANTED OR SUPERUSER APP MISSING</string>
+    <string name="Root_Message">This application is not compatible with rooted device.</string>
+    <string name="yes_busybox">BUSYBOX INSTALLED :</string>
+    <string name="no_busybox">BUSYBOX NOT INSTALLED OR NOT SYMLINKED</string>
+    <string name="su_app">SUPERUSER APP :</string>
+    <string name="alert">Alert</string>
+
+</resources>

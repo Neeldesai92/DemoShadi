@@ -1,0 +1,254 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">    <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/CustomAnimationActivity</item>
+        <!--Theme.AppCompat.Light.DarkActionBar-->
+        <item name="dialogTheme">@style/MyAlertDialogStyle</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomAnimationActivity</item>
+    </style>
+
+
+    <style name="CustomAnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_to_right</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+    <style name="AppTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/colorTabIndicator</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+    </style>
+
+
+    <!--Used for extra labels-->
+    <style name="customTabText" parent="Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/tab_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Used for Big label-->
+    <style name="customTitle">
+        <item name="android:textSize">@dimen/dimen_text_xxlarge</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorLabel</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Used for extra labels-->
+    <style name="customTextNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_text_default</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorLabel</item>
+    </style>
+
+    <!--Used for dialog headers labels-->
+    <style name="customDialogHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_text_large</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorLabel</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--Used for Caption links labels-->
+    <style name="customCaptionLink">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_text_medium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+
+    <!--Used for Highlighted labels-->
+    <style name="customTextHighlighted">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/dimen_text_small</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <!--Used while taking user entry-->
+    <style name="customEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_btn_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/dimen_eight</item>
+        <item name="android:paddingBottom">@dimen/dimen_eight</item>
+        <item name="android:paddingStart">@dimen/dimen_twelve</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorLabel</item>
+        <item name="android:textSize">@dimen/dimen_text_medium</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+    </style>
+
+    <!--Used for Cards-->
+    <style name="customCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/dimen_card_corner_radius</item>
+        <item name="cardElevation">@dimen/dimen_card_elivation</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+
+    <!-- Alert Dialog Theme -->
+    <style name="MyAlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <!--        <item name="android:windowTitleStyle">@style/customTextNormal</item>-->
+        <!-- Used for the title as well as message -->
+        <!--        <item name="android:textColorPrimary">@color/colorAlertTextColor</item>-->
+        <!-- Used for the background
+        <item name="android:background">@android:color/white</item>-->
+        <!--        Riddhi Change-->
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <!-- Used for the buttons -->
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+
+    </style>
+
+    <style name="MyAlertDialogStyleNoTitle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <!-- Used for the buttons -->
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+
+    </style>
+
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/dimen_text_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/dimen_text_small</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="NeutralButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog.Flush">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/dimen_text_small</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+
+
+
+    <!--Used while getting value from user like registration and authentication only-->
+    <style name="CustomTextInput" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="background">@color/transparent</item>
+        <item name="boxBackgroundColor">@color/transparent</item>
+        <!-- <item name="android:strokeColor">@color/colorHint</item>-->
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded
+        </item>
+    </style>
+
+    <!-- <style name="CustomTextInput" parent="Theme.MaterialComponents.Light.NoActionBar">
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:radius">@dimen/dimen_corner_radius</item>
+         <item name="boxStrokeColor">@color/colorAccent</item>
+         <item name="hintTextColor">@color/colorAccent</item>
+         <item name="shapeAppearanceOverlay">
+             @style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded
+         </item>
+     </style>-->
+
+    <style name="ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="CustomToolbarStyle">
+        <item name="android:contentInsetStartWithNavigation">0dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!--    For fullscreen dialog-->
+    <style name="FullScreenDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--        <item name="android:layout_gravity">bottom</item>-->
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- Additionally if you want animations when dialog opening -->
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="CustomDivider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorGrey</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/dimen_text_large</item>
+        <!--<item name="android:layout_marginLeft">@dimen/dimen_three</item>-->
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
+
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Material.Dialog">
+        <item name="android:windowMinWidthMajor">10%</item>
+        <item name="android:windowMinWidthMinor">10%</item>
+    </style>
+</resources>

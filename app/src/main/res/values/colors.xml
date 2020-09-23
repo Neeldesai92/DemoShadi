@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47557C</color>
+    <color name="colorPrimaryDark">#47557C</color>
+    <color name="colorAccent">#419FE0</color>
+
+    <color name="colorBackground">#F6F6F7</color>
+
+    <!--    For Tab color-->
+    <color name="color_tab_selected">#ffffff</color>
+
+    <!--    TextColors-->
+    <color name="colorLabel">#000000</color>
+    <color name="colorHint">#929292</color>
+    <color name="colorGrey">#E7E6E6</color>
+    <color name="color_dark_Grey">#727272</color>
+    <color name="color_red">#F44336</color>
+    <color name="color_dark_red">#C00000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_green">#4CAF50</color>
+    <color name="colorYello">#EAB850</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_splash">#DE0044</color>
+
+
+    <color name="colorTabIndicator">#C00202</color>
+    <color name="colorOpenTabText">#C00202</color>
+    <color name="colorDeliveredTabText">#028102</color>
+
+    <color name="white_transparent">#E1ffffff</color>
+    <color name="attempted_color">#E0DAA843</color>
+    <color name="transparent2">#52000000</color>
+    <color name="transparent3">#BF000000</color>
+</resources>

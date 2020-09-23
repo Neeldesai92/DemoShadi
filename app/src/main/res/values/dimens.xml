@@ -1,0 +1,69 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!--    General dimens-->
+    <dimen name="dimen_two">2dp</dimen>
+    <dimen name="dimen_three">3dp</dimen>
+    <dimen name="dimen_five">5dp</dimen>
+    <dimen name="dimen_seven">7dp</dimen>
+    <dimen name="dimen_eight">8dp</dimen>
+    <dimen name="dimen_ten">10dp</dimen>
+    <dimen name="dimen_twelve">12dp</dimen>
+    <dimen name="dimen_sixteen">16dp</dimen>
+    <dimen name="dimen_Twenty">20dp</dimen>
+    <dimen name="dimen_four">4dp</dimen> <!--Dialog elevation-->
+
+    <!--    For tab selectors-->
+    <dimen name="tab_corner">8dp</dimen>
+    <dimen name="tab_height">35dp</dimen>
+    <dimen name="tab_text_size">18sp</dimen>
+
+    <!--Text Sizes-->
+    <dimen name="dimen_text_small">12sp</dimen>
+    <dimen name="dimen_text_medium">14sp</dimen>
+    <dimen name="dimen_text_default">16sp</dimen>
+    <dimen name="dimen_text_large">18sp</dimen>
+    <dimen name="dimen_text_xlarge">20sp</dimen>
+    <dimen name="dimen_text_xxlarge">40sp</dimen>
+
+    <!--    Common paddings-->
+    <dimen name="padding_layout">12dp</dimen>
+    <dimen name="dimen_layout_margin">12dp</dimen>
+
+    <!--Card View-->
+    <dimen name="dimen_card_elivation">3dp</dimen>
+    <dimen name="dimen_card_corner_radius">8dp</dimen>
+    <dimen name="dimen_card_outer_spacing">12dp</dimen>
+    <dimen name="dimen_card_content_padding">12dp</dimen>
+    <dimen name="dimen_corner_radius">5dp</dimen>
+    <!--    Extra-->
+    <dimen name="dimen_icon">35dp</dimen>
+    <dimen name="dimen_btn_height">45dp</dimen>
+    <dimen name="dimen_sp_corner_radius">12dp</dimen>
+    <dimen name="dimen_filter_corn_radious">20dp</dimen>
+
+    <!--    For dialog-->
+    <dimen name="material_component_dialogs_padding_around_content_area">18dp</dimen>
+    <dimen name="material_component_dialogs_padding_between_title_and_body_text">20dp
+    </dimen><!--Padding between title and body text-->
+    <dimen name="material_component_dialogs_padding_around_buttons">8dp
+    </dimen> <!--Padding around buttons-->
+    <dimen name="material_component_dialogs_action_area_height">8dp
+    </dimen> <!--Action area height-->
+    <dimen name="material_component_dialogs_elevation">24dp</dimen>
+    <dimen name="dimen_card_componant_specing">15dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!--Toolbar-->
+    <dimen name="toolbarTitle">18sp</dimen>
+
+
+    <!--Card View-->
+    <dimen name="dimen_card_elivation_value">3dp</dimen>
+
+</resources>

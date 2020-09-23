@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_Twenty"
+    android:layout_marginTop="@dimen/dimen_ten"
+    android:layout_marginRight="@dimen/dimen_Twenty"
+    android:layout_marginBottom="@dimen/dimen_ten"
+    android:background="@color/color_white"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/dimen_card_corner_radius"
+    app:cardElevation="@dimen/dimen_card_elivation_value">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/gradient_background" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_acation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_ten"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_reject"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+
+                android:background="@drawable/custom_button_color_red"
+                android:src="@drawable/ic_close" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_accept"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dimen_ten"
+
+
+                android:background="@drawable/custom_button_color_green"
+                android:src="@drawable/ic_check" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_ten"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_eight"
+            android:paddingRight="@dimen/dimen_eight"
+            android:paddingBottom="@dimen/dimen_ten"
+            android:visibility="gone">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:padding="@dimen/dimen_three"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_text_default" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

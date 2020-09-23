@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <size
+        android:width="40dp"
+        android:height="40dp" />
+    <solid android:color="@color/color_green" />
+    <padding
+        android:bottom="@dimen/dimen_card_content_padding"
+        android:left="@dimen/dimen_card_content_padding"
+        android:right="@dimen/dimen_card_content_padding"
+        android:top="@dimen/dimen_card_content_padding" />
+    <corners
+        android:bottomLeftRadius="@dimen/dimen_sp_corner_radius"
+        android:bottomRightRadius="@dimen/dimen_sp_corner_radius"
+        android:topLeftRadius="@dimen/dimen_sp_corner_radius"
+        android:topRightRadius="@dimen/dimen_sp_corner_radius" />
+
+</shape>
